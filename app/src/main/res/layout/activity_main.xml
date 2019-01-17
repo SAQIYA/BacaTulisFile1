@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context="com.gmail.saskiakanza.bacatulisfile1.MainActivity"
+    tools:showIn="@layout/activity_main"
+    >
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama:"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/editNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName">
+            <requestFocus/>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM:"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <EditText
+            android:id="@+id/editNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <Button
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/buttonInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input NIM"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:id="@+id/textDataMhs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Mahasiswa: \n"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+</LinearLayout>
